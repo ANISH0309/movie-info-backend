@@ -7,10 +7,11 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-const port = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+app.set("port", PORT);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

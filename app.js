@@ -7,7 +7,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-
+const port = process.env.PORT || 3000
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -37,7 +37,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-app.listen(3000,()=>{
-    console.log("Server running on port 3000");
+app.listen(port,()=>{
+    console.log("Server running on port "+port);
 })
 module.exports = app;

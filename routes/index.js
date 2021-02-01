@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var key = require('./keys.js').omdb_api;
+// var key = require('./keys.js').omdb_api;
+const key = process.env.API_KEY;
 var request = require('request');
 
 var movie = [];

@@ -1,7 +1,9 @@
 var express = require('express');
 var router = express.Router();
 // var key = require('./keys.js').omdb_api;
+require('dotenv').config();
 const key = process.env.API_KEY;
+console.log(process.env);
 var request = require('request');
 
 var movie = [];

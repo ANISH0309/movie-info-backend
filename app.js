@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
+require('dotenv').config();
 var app = express();
 const PORT = process.env.PORT || 3000
 

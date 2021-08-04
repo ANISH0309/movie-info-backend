@@ -1,1 +1,3 @@
-A movie search app which uses omdb api built using NodeJS and Express.
+# Movie Search App
+
+A movie search app built using NodeJS and Express, which uses omdb api.
